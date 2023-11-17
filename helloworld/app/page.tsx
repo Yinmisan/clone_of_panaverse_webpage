@@ -1,4 +1,8 @@
 import Image from 'next/image'
+import profilePic from '../public/images/me.jpg'
+import logo from '../public/images/redlogo.png'
+
+
 
 export default function Home() {
   return (
@@ -16,8 +20,10 @@ export default function Home() {
 
     <main id="content" className="main-content" role="main">
       <h1 id="certified-web-30-and-metaverse-developer-a-nationwide-program-in-karachi-lahore-islamabad-and-peshawar">Certified Web 3.0 and Metaverse Developer: A Nationwide Program in Karachi, Lahore, Islamabad, and Peshawar</h1>
-
-<img src="https://www.panaverse.co/red-p-logo-text_dao_croped.png" alt="Panaverse DAO Logo" />
+  
+<Image src={logo} 
+alt="Panaverse DAO Logo"
+ />
 
 <h2 id="the-future-of-the-web-is-web-30-metaverse-and-edge-computing-panaverse-dao-is-a-movement-to-spread-these-technolgies-globally-it-is-community-of-web-3-and-metaverse-developers-designers-trainers-startup-founders-and-service-providers">The Future of the Web is Web 3.0, Metaverse, and Edge Computing. Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers.</h2>
 
@@ -153,7 +159,7 @@ export default function Home() {
 
 <p>Background of JavaScript and How to use JavaScript in Browser
 Variables, Primitive data types Analyzing and modifying data types, and Operators (Chapter 2 of JavaScript from Beginner to Professional)</p>
-
+    
 <ol>
   <li>Intro to Node.js, .mjs files, Modules, NPM, import, export, and using external modules with npm:
 https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing<br />
@@ -510,7 +516,7 @@ https://docs.openzeppelin.com/contracts/4.x/access-control</p>
 <p>Build a 3D Donut using Blender 3 as shown in these video tutorials https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD</p>
 
 <p>Assignment 2:
-Build a Viking Scene using Blender 3 as shown in chapter 2 of the Book [Blender by Example 2nd Edition https://www.packtpub.com/product/blender-3d-by-example-second-edition/9781789612561</p>
+Build a Viking Scene using Blender 3 as shown in chapter 2 of the Book Blender by Example 2nd Edition https://www.packtpub.com/product/blender-3d-by-example-second-edition/9781789612561</p>
 
 <p>Assignment 3:</p>
 
@@ -529,15 +535,109 @@ Build a Viking Scene using Blender 3 as shown in chapter 2 of the Book [Blender 
 <p>Build a 3D Sword in the Stone using Blender 3 as shown in these video tutorials https://www.youtube.com/watch?v=bpvh-9H8S1g</p>
 
 
+<h1>This image from Pc of mr pink</h1>
+<Image
+      src={profilePic}
+      alt="Picture of the author"
+      // width={500} automatically provided
+      // height={500} automatically provided
+      // blurDataURL="data:..." automatically provided
+      // placeholder="blur" // Optional blur-up while loading
+    />
+<h1>This video from Youtube </h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0EYseoYwt-c?si=4QsNCMMLA6HT3qe5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>This video from Pc </h1>
+<iframe width="300" height="600" src="/videos/video.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+<div>
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Unilever Pakistan Foods Limited</td>
+    <td>0303111111</td>
+    <td>Pakistan</td>
+  </tr>
+  <tr>
+    <td>Fauji Fertilizer Company Limited</td>
+    <td>0303222222</td>
+    <td>Pakistan</td>
+  </tr>
+  <tr>
+    <td>Lucky Cement Limited</td>
+    <td>0303333333</td>
+    <td>Pakistan</td>
+  </tr>
+  <tr>
+    <td>MCB Bank Limited</td>
+    <td>0303444444</td>
+    <td>Pakistan</td>
+  </tr>
+  <tr>
+    <td>Engro Corporation Limited</td>
+    <td>0303555555</td>
+    <td>Pakistan</td>
+  </tr>
+  <tr>
+    <td>United Bank Limited</td>
+    <td>0303666666</td>
+    <td>Pakistan</td>
+  </tr>
+</table>
+</div>
+
+<h1>This is a contact form</h1>
+<div className="w-full max-w-xs mx-auto">
+  <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="mb-4">
+      <label className="block text-gray-700 text-sm font-bold mb-2" for="name">
+        Name
+      </label>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your name">
+      </input>
+      </div>
+    <div className="mb-6">
+      <label className="block text-gray-700 text-sm font-bold mb-2" for="email">
+        Email
+      </label>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email">
+        </input>
+    </div>
+    <div className="mb-6">
+      <label className="block text-gray-700 text-sm font-bold mb-2" for="message">
+        Message
+      </label>
+      <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message"></textarea>
+    </div>
+    <div className="flex items-center justify-between">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+        Send
+      </button>
+    </div>
+  </form>
+</div>
 
       <footer className="site-footer">
         
-        <span className="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+        <span className="site-footer-credits">This page was generated by Badeh Saleemi.</span>
       </footer>
     </main>
   </div>
 
-
+ 
     
   
   )}
